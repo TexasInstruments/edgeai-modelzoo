@@ -1,0 +1,43 @@
+task_type: depth_estimation
+# Inference/import recipe. Dataset evaluation requires a separate relative-depth
+# metric/scale-alignment integration; no dataset accuracy is claimed here.
+dataset_category: null
+calibration_dataset: null
+input_dataset: null
+preprocess:
+  resize: [224, 392]
+  crop: [224, 392]
+  data_layout: NCHW
+  reverse_channels: false
+  backend: pil
+  interpolation: 3
+  resize_with_pad: false
+session:
+  session_name: onnxrt
+  input_optimization: false
+  input_data_layout: NCHW
+  input_mean: [123.675, 116.28, 103.53]
+  input_scale: [0.017124753831663668, 0.01750700280112045, 0.017429193899782137]
+  runtime_options:
+    tensor_bits: 16
+    accuracy_level: 9
+    max_num_subgraphs: 16
+    advanced_options:add_data_convert_ops: 3
+    advanced_options:calibration_frames: 3
+    advanced_options:calibration_iterations: 1
+    advanced_options:quantization_scale_type: 1
+    advanced_options:activation_clipping: 0
+    advanced_options:weight_clipping: 0
+    advanced_options:bias_calibration: 0
+    deny_list:layer_type: Softmax
+  model_path: static.onnx
+  input_details: null
+  output_details: null
+  num_inputs: 1
+postprocess:
+  save_output: false
+metric: {}
+model_info:
+  metric_reference: {}
+  compact_name: depth-anything-v2-small-tidl-224x392
+  shortlisted: false

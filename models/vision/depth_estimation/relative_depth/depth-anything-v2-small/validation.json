@@ -1,0 +1,137 @@
+{
+  "model_sha256": "b192a97202ef9675a8eedd29bc32b1faaff744af1fcd06fee064817e7d9054d3",
+  "providers": [
+    "TIDLExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "frames": [
+    {
+      "frame": "frame-000",
+      "relative_rmse": 0.006956541427225363,
+      "correlation": 0.9999540953084891,
+      "passed": true
+    },
+    {
+      "frame": "frame-001",
+      "relative_rmse": 0.010527978114340848,
+      "correlation": 0.9998739774808441,
+      "passed": true
+    },
+    {
+      "frame": "frame-002",
+      "relative_rmse": 0.008807741062072477,
+      "correlation": 0.9999148681399843,
+      "passed": true
+    },
+    {
+      "frame": "frame-003",
+      "relative_rmse": 0.010656595087042498,
+      "correlation": 0.9998623194119791,
+      "passed": true
+    },
+    {
+      "frame": "frame-004",
+      "relative_rmse": 0.011803010628918486,
+      "correlation": 0.9998138261835625,
+      "passed": true
+    },
+    {
+      "frame": "frame-005",
+      "relative_rmse": 0.008666392969558344,
+      "correlation": 0.9999443589562176,
+      "passed": true
+    },
+    {
+      "frame": "frame-006",
+      "relative_rmse": 0.009695409348438487,
+      "correlation": 0.9998847296731599,
+      "passed": true
+    },
+    {
+      "frame": "frame-007",
+      "relative_rmse": 0.011945174290030013,
+      "correlation": 0.999778940405273,
+      "passed": true
+    },
+    {
+      "frame": "frame-008",
+      "relative_rmse": 0.006100405009539876,
+      "correlation": 0.9999585608845625,
+      "passed": true
+    },
+    {
+      "frame": "frame-009",
+      "relative_rmse": 0.008885697445120404,
+      "correlation": 0.9998877662454848,
+      "passed": true
+    },
+    {
+      "frame": "frame-010",
+      "relative_rmse": 0.01428802793219603,
+      "correlation": 0.9997430529038457,
+      "passed": true
+    },
+    {
+      "frame": "frame-011",
+      "relative_rmse": 0.007985687421646513,
+      "correlation": 0.9999407756900517,
+      "passed": true
+    },
+    {
+      "frame": "frame-012",
+      "relative_rmse": 0.008156857072029735,
+      "correlation": 0.9998979172732555,
+      "passed": true
+    },
+    {
+      "frame": "frame-013",
+      "relative_rmse": 0.00736702638537768,
+      "correlation": 0.9999221051000852,
+      "passed": true
+    },
+    {
+      "frame": "frame-014",
+      "relative_rmse": 0.00765948175091359,
+      "correlation": 0.9999175597005426,
+      "passed": true
+    },
+    {
+      "frame": "frame-015",
+      "relative_rmse": 0.00778791573738451,
+      "correlation": 0.9999140064481389,
+      "passed": true
+    },
+    {
+      "frame": "frame-016",
+      "relative_rmse": 0.009307413030566345,
+      "correlation": 0.9999269814800659,
+      "passed": true
+    },
+    {
+      "frame": "frame-017",
+      "relative_rmse": 0.014602984942089347,
+      "correlation": 0.9997677336578619,
+      "passed": true
+    },
+    {
+      "frame": "frame-018",
+      "relative_rmse": 0.0061810196503262705,
+      "correlation": 0.9999593666518044,
+      "passed": true
+    }
+  ],
+  "maximum_relative_rmse": 0.014602984942089347,
+  "output_agreement_passed": true,
+  "hardware_execution_verified": false,
+  "threshold": 0.1,
+  "target": "SK-TDA4VM / J721E",
+  "sdk": "11.00.00.08",
+  "tidl": "11_00_08_00",
+  "tensor_bits": 16,
+  "offloaded_nodes": 804,
+  "total_nodes": 817,
+  "subgraphs": 14,
+  "real_time_verified": false,
+  "physical_depth_accuracy_verified": false,
+  "playback_fps": 2
+}

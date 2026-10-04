@@ -35,6 +35,15 @@ Depth Estimation using monocular images is an emerging field of research and hos
 
 
 
+## Relative-depth development candidates
+
+- [Depth Anything V2 Small TIDL graph port](./relative_depth/depth-anything-v2-small/):
+  static 224x392 ONNX with original learned weights, LayerNorm/QKV compatibility
+  repairs, and exact align-corners interpolation expressed as MatMul. TI J721E
+  16-bit host emulation passes 19/19 video-frame comparisons with worst relative
+  RMSE 1.46% versus CPU. Physical-board FPS and dataset depth accuracy are
+  unverified; output is relative inverse depth rather than metres.
+
 ## References
 
 [1] NYUDepthV2: Nathan Silberman, Pushmeet Kohli, Derek Hoiem, Rob Fergus, Indoor Segmentation and Support Inference from RGBD Images, ECCV 2012, https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html
